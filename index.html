@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Hurlers Bar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-name">The Hurlers</span>
+          <span class="nav-tagline">Traditional Irish Bar</span>
+        </a>
+        <div class="nav-social">
+          <a href="https://www.facebook.com/hurlersbar/" target="_blank" class="nav-social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/thehurlersbar/" target="_blank" class="nav-social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#food">Food</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="book.html" class="nav-cta">Book a Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag fade-in" data-delay="100">Welcome to</p>
+      <h1 class="fade-in" data-delay="300">The Hurlers</h1>
+      <img src="hurleys.png" alt="The Hurlers" class="hero-logo fade-in" data-delay="400" />
+      <p class="hero-sub fade-in" data-delay="500">Great drinks. Great food. Great craic.</p>
+      <div class="hero-btns fade-in" data-delay="700">
+        <a href="book.html" class="btn btn-primary btn-large">Book a Table</a>
+        <a href="#food" class="btn btn-outline-dark btn-large">See Our Menu</a>
+        <a href="#about" class="btn btn-outline-dark btn-large">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-building fade-in" data-delay="400">
+      <img src="hero img hurlers.png" alt="The Hurlers Bar" />
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="carvery-banner" id="food">
+    <div class="carvery-inner">
+      <div class="carvery-img">
+        <img src="outsode the hurlers.jpg" alt="The Hurlers Bar exterior" />
+      </div>
+      <div class="carvery-text">
+        <span class="carvery-label">Take a Look</span>
+        <h2>Our Menu</h2>
+        <div class="menu-display">
+          <img src="menu.png" alt="The Hurlers Menu" class="menu-img" id="menuImg" title="Click to enlarge" />
+        </div>
+        <a href="book.html" class="btn btn-primary">Reserve Your Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU LIGHTBOX -->
+  <div class="lightbox" id="menuLightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img src="menu.png" alt="The Hurlers Menu" class="lightbox-img" />
+  </div>
+
+  <!-- LIVE MUSIC -->
+  <section class="music-section" id="music">
+    <div class="music-bg-text">MUSIC</div>
+    <div class="container">
+      <div class="music-inner">
+        <div class="music-top">
+          <span class="music-label">Every Weekend</span>
+          <h2>Live Music</h2>
+          <p>Join us every weekend for live music in a warm, traditional atmosphere. There's no better way to spend an evening — great drinks, great company, and great sounds under a thatched roof.</p>
+        </div>
+        <div class="music-badge">
+          <span class="music-day">FRI</span>
+          <span class="music-night">&amp; SAT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="our story.jpeg" alt="The Hurlers owner" />
+          <div class="about-img-accent"></div>
+        </div>
+        <div class="about-text">
+          <span class="section-label">Our Story</span>
+          <h2>A True Irish Local</h2>
+          <p>The Hurlers is one of those rare pubs that hasn't forgotten what a local should be. Housed in a beautifully kept thatched building, it's a place where regulars feel at home and newcomers quickly become regulars.</p>
+          <p>We take pride in great food made fresh every day, a warm welcome at every visit, and the kind of atmosphere you only find in a real Irish bar. Whether you're calling in for a quick pint or settling in for the evening — you're always welcome at The Hurlers.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <strong>Mon – Thu</strong>
+              <span>12pm – 11:30pm</span>
+            </div>
+            <div class="stat">
+              <strong>Fri – Sat</strong>
+              <span>12pm – 12:30am</span>
+            </div>
+            <div class="stat">
+              <strong>Sunday</strong>
+              <span>12pm – 11pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD HIGHLIGHT -->
+  <section class="food-highlight">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Hurlers</span>
+        <h2>Food &amp; Drink Done Right</h2>
+        <p>From our kitchen to your table — made with care, every time.</p>
+      </div>
+      <div class="food-duo">
+        <div class="food-duo-card">
+          <img src="guinness.jpg" alt="Guinness at The Hurlers" />
+          <div class="food-duo-overlay">
+            <h3>Perfect Pint</h3>
+            <p>Poured the proper way</p>
+          </div>
+        </div>
+        <div class="food-duo-card">
+          <img src="pizza.webp" alt="Wood-fired pizza at The Hurlers" />
+          <div class="food-duo-overlay">
+            <h3>Stone Baked Pizza</h3>
+            <p>Fresh from the oven</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-label">Get In Touch</span>
+          <h2>Find Us</h2>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong>Address</strong>
+                <p>Dublin Road, Castletroy, Limerick</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <p>(061) 335 272</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <strong>Opening Hours</strong>
+                <p>Mon–Thu: 12pm – 11:30pm<br />Fri–Sat: 12pm – 12:30am<br />Sun: 12pm – 11pm</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/hurlersbar/" target="_blank" class="social-link">Facebook</a>
+            <a href="https://www.instagram.com/thehurlersbar/" target="_blank" class="social-link">Instagram</a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-8.6450%2C52.6560%2C-8.6200%2C52.6720&amp;layer=mapnik"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            title="The Hurlers Bar location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+         
+        <p>Dublin Road, Castletroy, Limerick</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="book.html">Book a Table</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li><span>Mon – Thu</span><span>12pm – 11:30pm</span></li>
+          <li><span>Fri – Sat</span><span>12pm – 12:30am</span></li>
+          <li><span>Sunday</span><span>12pm – 11pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Hurlers Bar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE SOCIAL BAR -->
+  <div class="mobile-social-bar">
+    <a href="https://www.facebook.com/hurlersbar/" target="_blank" class="mobile-social-link">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      <span>Facebook</span>
+    </a>
+    <a href="https://www.instagram.com/thehurlersbar/" target="_blank" class="mobile-social-link">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      <span>Instagram</span>
+    </a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

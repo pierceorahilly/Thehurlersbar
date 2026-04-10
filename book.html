@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Table – The Hurlers Bar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="booking.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <a href="index.html" class="nav-logo">
+          <span class="nav-logo-name">The Hurlers</span>
+          <span class="nav-tagline">Traditional Irish Bar</span>
+        </a>
+        <div class="nav-social">
+          <a href="https://www.facebook.com/hurlersbar/" target="_blank" class="nav-social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/thehurlersbar/" target="_blank" class="nav-social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#food">Food</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="book.html" class="nav-cta active">Book a Table</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-label fade-in" data-delay="100">Reserve Your Spot</span>
+      <h1 class="fade-in" data-delay="300">Book a Table</h1>
+      <p class="fade-in" data-delay="500">Choose your date and party size — we'll take care of the rest.</p>
+    </div>
+    <div class="page-hero-building fade-in" data-delay="200">
+      <img src="hero img hurlers.png" alt="The Hurlers Bar" />
+    </div>
+  </section>
+
+  <!-- BOOKING APP -->
+  <section class="booking-section">
+    <div class="container">
+
+      <!-- PROGRESS BAR -->
+      <div class="progress-bar-wrap">
+        <div class="progress-steps">
+          <div class="progress-step active" id="ps1">
+            <div class="ps-circle">1</div>
+            <span>Choose Date</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" id="ps2">
+            <div class="ps-circle">2</div>
+            <span>Guests</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" id="ps3">
+            <div class="ps-circle">3</div>
+            <span>Your Details</span>
+          </div>
+          <div class="progress-line"></div>
+          <div class="progress-step" id="ps4">
+            <div class="ps-circle">4</div>
+            <span>Confirm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-wrapper">
+
+        <!-- ══ MAIN FORM AREA ══ -->
+        <div class="booking-main">
+
+          <!-- ── STEP 1: DATE ── -->
+          <div class="bstep active" id="bstep1">
+            <h2 class="step-heading">When would you like to visit?</h2>
+
+            <div class="calendar-wrap">
+              <div class="calendar-header">
+                <button type="button" class="cal-nav" id="calPrev">&#8592;</button>
+                <span class="cal-month-label" id="calMonthLabel"></span>
+                <button type="button" class="cal-nav" id="calNext">&#8594;</button>
+              </div>
+              <div class="calendar-grid">
+                <div class="cal-day-name">Mon</div>
+                <div class="cal-day-name">Tue</div>
+                <div class="cal-day-name">Wed</div>
+                <div class="cal-day-name">Thu</div>
+                <div class="cal-day-name">Fri</div>
+                <div class="cal-day-name">Sat</div>
+                <div class="cal-day-name">Sun</div>
+              </div>
+              <div class="calendar-days" id="calendarDays"></div>
+            </div>
+
+            <div class="bstep-footer">
+              <button type="button" class="btn btn-primary" id="step1Next" disabled>Select a date to continue &rarr;</button>
+            </div>
+          </div>
+
+          <!-- ── STEP 2: GUESTS ── -->
+          <div class="bstep" id="bstep2">
+            <h2 class="step-heading">How many guests?</h2>
+            <p class="step-sub" id="step2Sub"></p>
+
+            <div class="guest-selector">
+              <div class="guest-chips">
+                <button type="button" class="guest-chip" data-guests="1">1</button>
+                <button type="button" class="guest-chip" data-guests="2">2</button>
+                <button type="button" class="guest-chip" data-guests="3">3</button>
+                <button type="button" class="guest-chip" data-guests="4">4</button>
+                <button type="button" class="guest-chip" data-guests="5">5</button>
+                <button type="button" class="guest-chip" data-guests="6">6</button>
+                <button type="button" class="guest-chip" data-guests="7">7</button>
+                <button type="button" class="guest-chip" data-guests="8">8</button>
+                <button type="button" class="guest-chip large-party" data-guests="9">9+</button>
+              </div>
+              <p class="large-party-msg" id="largePartyMsg">For parties of 9 or more please <a href="index.html#contact">call us directly</a>.</p>
+            </div>
+
+            <div class="bstep-footer">
+              <button type="button" class="btn btn-ghost" onclick="goToStep(1)">&larr; Back</button>
+              <button type="button" class="btn btn-primary" id="step2Next" disabled>Continue &rarr;</button>
+            </div>
+          </div>
+
+          <!-- ── STEP 3: DETAILS ── -->
+          <div class="bstep" id="bstep3">
+            <h2 class="step-heading">Your details</h2>
+
+            <div class="booking-summary-bar" id="summaryBar3"></div>
+
+            <form id="detailsForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" placeholder="John" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" placeholder="Doe" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" placeholder="john@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone *</label>
+                  <input type="tel" id="phone" placeholder="(061) 335 272" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="occasion">Occasion (optional)</label>
+                <select id="occasion">
+                  <option value="">No special occasion</option>
+                  <option value="Birthday">Birthday</option>
+                  <option value="Anniversary">Anniversary</option>
+                  <option value="Date Night">Date Night</option>
+                  <option value="Business Meal">Business Meal</option>
+                  <option value="Celebration">Celebration</option>
+                  <option value="Match Day">Match Day</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="requests">Special Requests / Dietary Requirements</label>
+                <textarea id="requests" rows="3" placeholder="e.g. window seat, nut allergy, high chair..."></textarea>
+              </div>
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="carveryOpt" />
+                  <span class="checkmark"></span>
+                  We'd like the Carvery Lunch (Mon–Sun, 12pm–3pm)
+                </label>
+              </div>
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="privacyOpt" required />
+                  <span class="checkmark"></span>
+                  I agree to The Hurlers storing my contact details for this reservation *
+                </label>
+              </div>
+            </form>
+
+            <div class="bstep-footer">
+              <button type="button" class="btn btn-ghost" onclick="goToStep(2)">&larr; Back</button>
+              <button type="button" class="btn btn-primary" onclick="submitBooking()">Review Booking &rarr;</button>
+            </div>
+          </div>
+
+          <!-- ── STEP 4: CONFIRMATION ── -->
+          <div class="bstep" id="bstep4">
+            <div class="confirmation-wrap">
+              <div class="conf-icon">&#10003;</div>
+              <h2>Booking Confirmed!</h2>
+              <p class="conf-intro">Thank you, <strong id="confName"></strong>. Your table is reserved at The Hurlers.</p>
+
+              <div class="conf-card" id="confCard"></div>
+
+              <p class="conf-note">A confirmation will be sent to <strong id="confEmail"></strong>. If you need to make any changes, call us on <strong>(061) 335 272</strong>.</p>
+
+              <div class="conf-actions">
+                <a href="index.html" class="btn btn-outline">Back to Home</a>
+                <button type="button" class="btn btn-primary" onclick="newBooking()">Make Another Booking</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ══ SIDEBAR ══ -->
+        <aside class="booking-sidebar">
+
+          <!-- Live Summary Card -->
+          <div class="sidebar-card summary-card" id="liveSummary">
+            <h3>Your Booking</h3>
+            <div class="summary-rows" id="summaryRows">
+              <div class="summary-empty">Select a date and time to see your booking summary here.</div>
+            </div>
+          </div>
+
+          <!-- Info Card -->
+          <div class="sidebar-card">
+            <h3>Good to Know</h3>
+            <ul class="sidebar-list">
+              <li>
+                <span class="sidebar-icon">🕐</span>
+                <div>
+                  <strong>Opening Hours</strong>
+                  <p>Mon–Thu: 12pm – 11:30pm</p>
+                  <p>Fri–Sat: 12pm – 12:30am</p>
+                  <p>Sun: 12pm – 11pm</p>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-icon">👥</span>
+                <div>
+                  <strong>Large Groups</strong>
+                  <p>Parties of 9+ please call us to arrange.</p>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-icon">🍖</span>
+                <div>
+                  <strong>Food</strong>
+                  <p>Daily · Great value homemade food</p>
+                </div>
+              </li>
+              <li>
+                <span class="sidebar-icon">📞</span>
+                <div>
+                  <strong>Call Us</strong>
+                  <p>(061) 335 272</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-card sidebar-card--red">
+            <img src="outsode the hurlers.jpg" alt="The Hurlers" style="width:100%;border-radius:6px;margin-bottom:1rem;height:120px;object-fit:cover;" />
+            <h3>Traditional Irish Bar</h3>
+            <p class="price-tag" style="font-size:1.1rem;">A true local pub</p>
+            <p>Thatched roof &nbsp;|&nbsp; Beer garden &nbsp;|&nbsp; Live music</p>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+       
+        <p>Traditional Irish Bar</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#food">Food</a></li>
+          <li><a href="book.html">Book a Table</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-hours">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li><span>Mon – Thu</span><span>12pm – 11:30pm</span></li>
+          <li><span>Fri – Sat</span><span>12pm – 12:30am</span></li>
+          <li><span>Sunday</span><span>12pm – 11pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Hurlers Bar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE SOCIAL BAR -->
+  <div class="mobile-social-bar">
+    <a href="https://www.facebook.com/hurlersbar/" target="_blank" class="mobile-social-link">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      <span>Facebook</span>
+    </a>
+    <a href="https://www.instagram.com/thehurlersbar/" target="_blank" class="mobile-social-link">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      <span>Instagram</span>
+    </a>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>
